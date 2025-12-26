@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
+  // Add Turbopack config to support webpack configuration
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;
+
+
